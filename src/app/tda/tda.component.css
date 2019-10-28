@@ -1,0 +1,31 @@
+.tda-template {
+    padding: 30px;
+}
+
+.title {
+    font-family: Verdana, Geneva, sans-serif;
+    margin-top: 10px;
+}
+
+.tda-value {
+    font-weight: bold;
+}
+
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 2px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+ .tda-li {
+    background: #cce5ff;
+    margin: 5px;
+    width: 270px;
+  }

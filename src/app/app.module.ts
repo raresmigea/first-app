@@ -3,10 +3,8 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { TdaComponent } from './tda/tda.component';
-import { MatSliderModule } from '@angular/material/slider';
 import { MatDialogModule } from '@angular/material/dialog';
 import { DialogComponent } from './dialog/dialog.component';
-//import { MdDialogModule} from '@angular/material/dialog';
 import { MatCardModule } from '@angular/material';
 import { MyDialogComponent } from './my-dialog/my-dialog.component';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
@@ -23,7 +21,6 @@ import { ToolTipComponent } from './tool-tip/tool-tip.component';
   imports: [
     BrowserModule,
     FormsModule,
-    MatSliderModule,
     MatDialogModule,
     MatCardModule,
     BrowserAnimationsModule,

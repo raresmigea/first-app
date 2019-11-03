@@ -1,8 +1,8 @@
-import { Component, OnInit, TemplateRef, Input} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-tda',
-  templateUrl: './tda.component.html',
+  templateUrl:'./tda.component.html',
   styleUrls: ['./tda.component.css']
 })
 

@@ -5,18 +5,32 @@ import { AppComponent } from './app.component';
 import { TdaComponent } from './tda/tda.component';
 import { MatSliderModule } from '@angular/material/slider';
 import { MatDialogModule } from '@angular/material/dialog';
-
-
+import { DialogComponent } from './dialog/dialog.component';
+//import { MdDialogModule} from '@angular/material/dialog';
+import { MatCardModule } from '@angular/material';
+import { MyDialogComponent } from './my-dialog/my-dialog.component';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { MatTooltipModule } from '@angular/material';
+import { ToolTipComponent } from './tool-tip/tool-tip.component';
 @NgModule({
   declarations: [
     AppComponent,
     TdaComponent,
+    DialogComponent,
+    MyDialogComponent,
+    ToolTipComponent,
   ],
   imports: [
     BrowserModule,
     FormsModule,
     MatSliderModule,
     MatDialogModule,
+    MatCardModule,
+    BrowserAnimationsModule,
+    MatTooltipModule,
+  ],
+  entryComponents: [
+    MyDialogComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],

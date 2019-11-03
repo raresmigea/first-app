@@ -1,5 +1,4 @@
 import { Component, OnInit, TemplateRef, Input} from '@angular/core';
-import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-tda',
@@ -13,6 +12,7 @@ export class TdaComponent implements OnInit {
   tdaForToday = false;
   datesArray = [];
   currentDate = "";
+  defaultDate = undefined;
 
   /** The values used for the intervals of Time Dependent Attribute */
   firstDate = new Date("2017-12-12");
@@ -49,7 +49,7 @@ export class TdaComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.checkDate();
+    this.checkDate(this.defaultDate);
  }
 
 }

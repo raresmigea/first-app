@@ -7,7 +7,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { DialogComponent } from './dialog/dialog.component';
 import { MatCardModule } from '@angular/material';
 import { MyDialogComponent } from './my-dialog/my-dialog.component';
-import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTooltipModule } from '@angular/material';
 import { ToolTipComponent } from './tool-tip/tool-tip.component';
 @NgModule({
@@ -26,10 +26,8 @@ import { ToolTipComponent } from './tool-tip/tool-tip.component';
     BrowserAnimationsModule,
     MatTooltipModule,
   ],
-  entryComponents: [
-    MyDialogComponent,
-  ],
+  entryComponents: [MyDialogComponent],
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

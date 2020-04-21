@@ -4,14 +4,13 @@ import { MyDialogComponent } from '../my-dialog/my-dialog.component';
 @Component({
   selector: 'app-dialog',
   templateUrl: './dialog.component.html',
-  styleUrls: ['./dialog.component.css']
+  styleUrls: ['./dialog.component.css'],
 })
 export class DialogComponent implements OnInit {
-  dialogResult = "";
-  constructor(public dialog: MatDialog) { }
+  dialogResult = '';
+  constructor(public dialog: MatDialog) {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   openDialog() {
     let dialogRef = this.dialog.open(MyDialogComponent, {
@@ -19,10 +18,9 @@ export class DialogComponent implements OnInit {
       height: '400px',
     });
 
-    dialogRef.afterClosed().subscribe(result => {
+    dialogRef.afterClosed().subscribe((result) => {
       console.log(`Dialog closed: ${result}`);
       this.dialogResult = result;
-    })
+    });
   }
-
 }

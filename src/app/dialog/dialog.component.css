@@ -1,16 +1,16 @@
 .button {
-    background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 2px 12px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-  }
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 2px 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 
-  .tda-template {
-   padding: 10px 150px 150px 100px;
+.tda-template {
+  padding: 10px 150px 150px 100px;
 }

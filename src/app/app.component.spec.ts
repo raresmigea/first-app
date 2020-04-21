@@ -5,10 +5,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 describe('AppComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [
-        AppComponent
-      ],
-      imports: [ BrowserAnimationsModule ],
+      declarations: [AppComponent],
+      imports: [BrowserAnimationsModule],
     }).compileComponents();
   }));
 
@@ -28,6 +26,8 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('first-app app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain(
+      'first-app app is running!'
+    );
   });
 });

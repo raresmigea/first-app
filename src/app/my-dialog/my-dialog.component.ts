@@ -4,14 +4,15 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 @Component({
   selector: 'app-my-dialog',
   templateUrl: './my-dialog.component.html',
-  styleUrls: ['./my-dialog.component.css']
+  styleUrls: ['./my-dialog.component.css'],
 })
 export class MyDialogComponent implements OnInit {
+  constructor(
+    public thisDialogRef: MatDialogRef<MyDialogComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: string
+  ) {}
 
-  constructor(public thisDialogRef: MatDialogRef<MyDialogComponent>, @Inject(MAT_DIALOG_DATA) public data: string) { }
-
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   onCloseConfirm() {
     this.thisDialogRef.close('Confirm');
@@ -20,5 +21,4 @@ export class MyDialogComponent implements OnInit {
   onCloseCancel() {
     this.thisDialogRef.close('Cancel');
   }
-
 }

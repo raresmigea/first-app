@@ -1,11 +1,17 @@
 <div class="tda-template">
-    <p class="title">Value of TDA for current date ({{today}}):<span class="tda-value"> {{tdaForToday}}</span></p>
-    <div>
-        <input type="date" [(ngModel)]="currentDate">
-        <button class="button" (click)="addNewTda()">add new tda</button>
+  <p class="title">
+    Value of TDA for current date ({{ today }}):<span class="tda-value">
+      {{ tdaForToday }}</span
+    >
+  </p>
+  <div>
+    <input type="date" [(ngModel)]="currentDate" />
+    <button class="button" (click)="addNewTda()">add new tda</button>
 
-        <ng-template ngFor let-names [ngForOf]="datesArray">
-            <li class="tda-li">{{names.date}} <span class="tda-value">{{names.active}}</span></li>
-        </ng-template>
-    </div>
+    <ng-template ngFor let-names [ngForOf]="datesArray">
+      <li class="tda-li">
+        {{ names.date }} <span class="tda-value">{{ names.active }}</span>
+      </li>
+    </ng-template>
+  </div>
 </div>

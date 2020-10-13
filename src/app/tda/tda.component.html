@@ -7,7 +7,7 @@
   <div>
     <input type="date" [(ngModel)]="currentDate" />
     <button class="button" (click)="addNewTda()">add new tda</button>
-
+    
     <ng-template ngFor let-names [ngForOf]="datesArray">
       <li class="tda-li">
         {{ names.date }} <span class="tda-value">{{ names.active }}</span>

@@ -13,9 +13,9 @@ export class TdaComponent implements OnInit {
   defaultDate = undefined;
 
   /** The values used for the intervals of Time Dependent Attribute */
-  firstDate = new Date('2017-12-12');
-  secondDate = new Date('2018-12-12');
-  thirdDate = new Date('2019-12-12');
+  firstDate = new Date('2018-12-12');
+  secondDate = new Date('2019-12-12');
+  thirdDate = new Date('2020-12-12');
 
   /**Computing the value of today's date */
   day = String(this.todayFull.getDate()).padStart(2, '0');

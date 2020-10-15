@@ -1,0 +1,54 @@
+<!-- Create a simple HTML file. The HTML should display two panes: one to the left (300px in width, red background)
+ and one to the right filling the rest of the space (green background). Both panes should fill the page vertically. 
+ Add a simple tree structure to the left pane.
+
+Node 1
+node 2
+
+    node 1.1
+    node 1.2
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      #x {
+        width: 100px;
+        height: 100%;
+      }
+      #a {
+        background-color: red;
+        width: 300px;
+        height: 100%;
+      }
+
+      #b {
+        background-color: green;
+        width: 100px;
+        height: 100%;
+      }
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="x">
+      <div id="a">
+        <nav>Navigation<a> click me</a><a> click me</a><a> click me</a></nav>
+        <ul>
+          <li>Node 1</li>
+          <li>Node 2</li>
+          <ul>
+            <li>Node 1.1</li>
+            <li>Node 1.2</li>
+          </ul>
+        </ul>
+      </div>
+      <div id="b"></div>
+    </div>
+  </body>
+</html>
